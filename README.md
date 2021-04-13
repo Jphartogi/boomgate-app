@@ -5,7 +5,7 @@ Boomgate landing page
 Docker usage:
 
 ```
-docker build --tag boomgate-app:1.0 .
+docker build -t berodimas/boomgate-demo:1.0 -f Dockerfile .
 docker pull redis:6.0
 docker-compose up -d
 ```
