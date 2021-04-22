@@ -9,6 +9,8 @@
 
 
 from PyQt5 import QtCore, QtGui, QtWidgets
+from PyQt5.QtGui import QIcon
+from PyQt5.QtCore import QSize
 
 class Ui_Form(object):
     def setupUi(self, Form):
@@ -16,19 +18,24 @@ class Ui_Form(object):
         Form.resize(640, 132)
         Form.setMinimumSize(QtCore.QSize(640, 132))
         Form.setStyleSheet("QLabel{\n"
-"    font: bold 10pt \"Open Sans\";\n"
-"    color: #353942;\n"
-"}\n"
-"\n"
-"QPushButton{\n"
-"    font: 8pt \"Open Sans\";\n"
-"    color: #353942;\n"
-"}\n"
-"\n"
-"QComboBox{\n"
-"    font: 8pt \"Open Sans\";\n"
-"    color: #353942;\n"
-"}")
+                            "    font: bold 10pt \"Open Sans\";\n"
+                            "    color: #353942;\n"
+                            "}\n"
+                            "\n"
+                            "QPushButton{\n"
+                            "    font: 8pt \"Open Sans\";\n"
+                            "    color: #353942;\n"
+                            "}\n"
+                            "\n"
+                            "QComboBox{\n"
+                            "    font: 8pt \"Open Sans\";\n"
+                            "    color: #353942;\n"
+                            "}")
+        
+        icon = QIcon()
+        icon.addFile("ui/icon/black-icon.ico", QSize(), QIcon.Normal, QIcon.Off)
+        Form.setWindowIcon(icon)
+
         self.centralwidget = QtWidgets.QWidget(Form)
         self.centralwidget.setObjectName("centralwidget")
         self.formLayout_2 = QtWidgets.QFormLayout(self.centralwidget)
@@ -67,25 +74,5 @@ class Ui_Form(object):
         Form.setCentralWidget(self.centralwidget)
         QtCore.QMetaObject.connectSlotsByName(Form)
 
-
-# class Form(QForm):
-#     def __init__(self):
-#         super().__init__()
-
-#         self.ui = Ui_Form()
-#         self.ui.setupUi(self)
-#         self.setWindowFlags(QtCore.Qt.WindowStaysOnTopHint)
-
-#         self.data = json.load(f)
-        
-#         self.ui.line_camera.setText(self.data["camera_address"])
-#         self.ui.line_gate.setText(self.data["gate_address"])
-#         self.ui.line_port.setText(self.data["port_address"])
-
-#         self.ui.button_enter.clicked.connect(self.close)
-
-# if __name__ == "__main__":
-#     application = QApplication(sys.argv)
-#     Form = Form()
-#     Form.show()
-#     sys.exit(application.exec_())
+        Form.setWindowTitle(
+            QtCore.QCoreApplication.translate("Form", "Qlue Boomgate"))

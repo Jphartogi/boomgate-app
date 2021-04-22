@@ -33,6 +33,8 @@
         <source>Gate 2</source>
         <translation>Gerbang 2</translation>
     </message>
+</context>
+<context>
     <name>MainWindow</name>
     <message>
         <location filename="boomgate.py" line="118"/>
@@ -45,31 +47,25 @@
         <translation>Bahasa</translation>
     </message>
     <message>
-        <location filename="boomgate.py" line="150"/>
-        <source>No gate selected</source>
-        <translation>Tidak ada gerbang yang dipilih</translation>
+        <location filename="boomgate.py" line="153"/>
+        <source>Configuration has ben selected</source>
+        <translation>Konfigurasi telah dipilih</translation>
     </message>
     <message>
         <location filename="boomgate.py" line="153"/>
-        <source>Gate have been selected</source>
-        <translation>Gerbang telah dipilih</translation>
-    </message>
-    <message>
-        <location filename="boomgate.py" line="163"/>
-        <source>No port selected</source>
-        <translation>Tidak ada port yang dipilih</translation>
-    </message>
-    <message>
-        <location filename="boomgate.py" line="166"/>
-        <source>Port have been selected</source>
-        <translation>Port telah dipilih</translation>
+        <source>Camera: {}
+Gate: {}
+Port: {}</source>
+        <translation>Kamera: {}
+Gerbang: {}
+Port: {}</translation>
     </message>
     <message>
         <location filename="boomgate.py" line="195"/>
         <source>Welcome to
-Qlue Performa Indonesia</source>
+{}</source>
         <translation>Selamat Datang di
-Qlue Performa Indonesia</translation>
+{}</translation>
     </message>
     <message>
         <location filename="boomgate.py" line="211"/>

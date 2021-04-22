@@ -1,4 +1,4 @@
-with open("image/qlue.png", "rb") as image:
+with open("image/logo.png", "rb") as image:
     f = image.read()
     qlue = bytes(f)
 

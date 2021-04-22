@@ -1,11 +1,12 @@
 {
+    "company_name": "Qlue Performa Indonesia",
     "gate_one":{
         "camera_address": "http://192.168.1.103:12500/QVAIM/live?feed_name=FR_Boomgate_Testing_1616489775600&engine_name=qvai-face_recognition",
         "gate_address": "https://www.google.com/",
         "port_address": "5000"
     },
     "gate_two":{
-        "camera_address": "http://192.168.1.103:12500/QVAIM/live?feed_name=FR_Boomgate_Testing_1616489775600&engine_name=qvai-face_recognition",
+        "camera_address": "http://124.158.146.43:12500/QVAIM/live?feed_name=Test_FR_Lippo_2_1617694551082&engine_name=qvai-face_recognition",
         "gate_address": "https://www.bing.com/",
         "port_address": "5001"
     }
