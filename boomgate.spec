@@ -4,7 +4,7 @@
 block_cipher = None
 
 
-a = Analysis(['boomgate.py'],
+a = Analysis(['boomgate.py', 'scripts/camera_stream.py', 'scripts/boomgate_gui.py', 'scripts/form.py', 'image/image_loader.py'],
              pathex=['C:\\wsl\\dev\\python-oop\\testing\\_docker\\_boomgate'],
              binaries=[],
              datas=[('ui/icon/black-icon.ico', '.')],

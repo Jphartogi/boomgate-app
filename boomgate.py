@@ -1,4 +1,4 @@
-from image.image_loader import *
+from image_loader import *
 
 from flask import Flask, jsonify, abort, make_response, request
 from flask_restful import Api, Resource, abort
@@ -9,9 +9,9 @@ import sys
 import requests
 import json
 
-from scripts.form import Ui_Form
-from scripts.boomgate_gui import *
-from scripts.camera_stream import CameraStream
+from form import Ui_Form
+from boomgate_gui import *
+from camera_stream import CameraStream
 
 app = Flask(__name__)
 api = Api(app)
