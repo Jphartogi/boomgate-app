@@ -17,6 +17,11 @@ Build .exe file:
 ```
 > Notes: Change "icon.ico" on with icon on "ui/icon". The path separator is platform-specific, on Windows use `;` while on Linux or Mac use `:`
 
+Build .spec file:
+```
+1. Run pyinstaller boomgate.spec
+```
+
 Docker usage:
 ```
 docker build -t berodimas/boomgate-demo:1.0 -f Dockerfile .
