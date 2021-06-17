@@ -122,7 +122,8 @@ class CameraStream(QWidget):
         if self.deque and self.online:
             # Grab latest frame
             frame = self.deque[-1]
-
+            # Handle if monitor is in low resolution screen
+            self.screen_width,self.screen_height = self.check_low_res_screen(self.screen_width,self.screen_height)
             # Keep frame aspect ratio
             if self.maintain_aspect_ratio:
                 self.frame = imutils.resize(frame, width=self.screen_width)
@@ -140,6 +141,15 @@ class CameraStream(QWidget):
 
     def get_video_frame(self):
         return self.video_frame
+
+    def check_low_res_screen(self,width,height):
+        # under 1366x768
+        if width < 440 or height < 250:
+            return 624,344
+        else:
+            return width,height
+        
+
 
     class VerifyNetworkHandler(QObject):
         verify_status = pyqtSignal(bool)
