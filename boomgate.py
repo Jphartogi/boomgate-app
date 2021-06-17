@@ -262,9 +262,8 @@ class MainWindow(QMainWindow):
             try:
                 path = urllib.request.urlopen(url).read()
                 self.signals.path_update.emit(path)
-            except ValueError as ve:
-                self.signals.path_update.emit(logo)
-                print("invalid image")    
+            except Exception as e:
+                print("invalid image")  
 
     @pyqtSlot()
     def back_welcome_setter(self):
